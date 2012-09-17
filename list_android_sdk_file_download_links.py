@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #!/usr/bin/python
 import xml.dom.minidom
 import urllib
@@ -6,9 +5,11 @@ import urllib
 repositoryUrl = "https://dl-ssl.google.com/android/repository/repository-7.xml"
 
 androidRepositoryBaseUrl = repositoryUrl[:repositoryUrl.rindex("/")+1]
-print androidRepositoryBaseUrl
-print "<html>"
 
+print """Content-Type: text/html\n"""
+print "<html>"
+print "<body>"
+print "<table border=\"1\">"
 def getElementText(element):
     texts = [];
     for node in element:
@@ -25,14 +26,14 @@ doc = xml.dom.minidom.parseString(repositoryXml)
 sdkElements = doc.getElementsByTagName("sdk:platform");
 for sdkElement in sdkElements:
     desc = sdkElement.getElementsByTagName("sdk:description")[0];
-    print(getElementText(desc.childNodes))
+    print ("<tr>")
+    print "<td>" + getElementText(desc.childNodes) + "</td>"
     archives = sdkElement.getElementsByTagName("sdk:archives");
     for archive in archives:
         archiveUrl = archive.getElementsByTagName("sdk:url")[0];
-        print(androidRepositoryBaseUrl + getElementText(archiveUrl.childNodes))
+        print("<td><a href=\"" + androidRepositoryBaseUrl + getElementText(archiveUrl.childNodes) + "\">download</a></td>")
 
-    print "\n"
-
-
+    print "</tr>"
+print "</table>"
+print "</body>"
 print "</html>"
-
