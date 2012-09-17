@@ -1,10 +1,12 @@
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
 import xml.dom.minidom
 import urllib
 
 repositoryUrl = "https://dl-ssl.google.com/android/repository/repository-7.xml"
 
-androidRepositoryBaseUrl = "https://dl-ssl.google.com/android/repository/"
-
+androidRepositoryBaseUrl = repositoryUrl[:repositoryUrl.rindex("/")+1]
+print androidRepositoryBaseUrl
 print "<html>"
 
 def getElementText(element):
@@ -15,10 +17,11 @@ def getElementText(element):
     return "\n".join(texts);
 
 repositoryXmlStream = urllib.urlopen(repositoryUrl);
-repositoryXml=repositoryXmlStream.read()
-
+repositoryXml = repositoryXmlStream.read()
 repositoryXml = repositoryXml.decode("utf8")
-doc = xml.dom.minidom.parse(repositoryXml)
+
+doc = xml.dom.minidom.parseString(repositoryXml)
+
 sdkElements = doc.getElementsByTagName("sdk:platform");
 for sdkElement in sdkElements:
     desc = sdkElement.getElementsByTagName("sdk:description")[0];
@@ -32,3 +35,4 @@ for sdkElement in sdkElements:
 
 
 print "</html>"
+
