@@ -90,5 +90,22 @@ function ord(str,    c)
 	}
 }
 END{
+	printf("\n总的平均时间\t");
+		for(i=0;i<taskCount;i++)
+		{
+			groupSum = 0;
+			studentCount=0;
+			for(studentName in studentNameToId) 
+			{
+				studentCount ++;
+				studentId = studentNameToId[studentName];
+				groupSum += submission[studentId, tasks[i]]/1000;	
+
+			}
+			printf("%.2f\t", groupSum/studentCount);
+		}
+		printf("\n");
+
 }
+
 
