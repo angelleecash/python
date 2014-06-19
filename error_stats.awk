@@ -1,7 +1,6 @@
 BEGIN{
 	groupCount=0;
 	taskCount=0;
-	printf("\t");
 	_ord_init();
 	printf("题号\t做错的人数\t做错的人名\n");
 }
@@ -57,7 +56,7 @@ function ord(str,    c)
 	{
 #		printf("%c 组\n", ord("A") + FNR -1);
 		groupCount ++;	
-		printf("\n");
+#		printf("\n");
 	}
 	else if(index(FILENAME, "submission_review") != 0) 
 	{
@@ -106,7 +105,6 @@ END{
 					}
 					printf("\n");
 				}
-				printf("\n");
 			}
 
 
