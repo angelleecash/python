@@ -67,6 +67,18 @@ function ord(str,    c)
 			printf("\n");
 		}
 		groupCount ++;	
+		printf("本组平均时间\t");
+		for(i=0;i<taskCount;i++)
+		{
+			groupSum = 0;
+			for(j=1;j<=NF;j++)
+			{
+				studentId = studentNameToId[$j];
+				groupSum += submission[studentId, tasks[i]]/1000;	
+			}
+			printf("%.2f\t", groupSum/NF);
+		}
+		printf("\n");
 	}
 	else if(index(FILENAME, "submission") != 0) 
 	{
