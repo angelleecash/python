@@ -11,5 +11,5 @@ mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select * from
 
 #groups ready
 
-awk -F " " -f study_time.awk knowledges  task_knowledge students submission groups 
+awk -F " " -f study_time.awk knowledges  task_knowledge students submission groups > "学习时间统计"
 

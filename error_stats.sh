@@ -14,5 +14,5 @@ mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select id,que
 
 cat assignments | sed "s/     / /g" | tr -d "[]" | sed -e "s/,/ /g" > assignmentsToQuestionIds
 
-awk -F " " -f error_stats.awk assignmentsToQuestionIds submission_review study_tasks knowledges task_knowledge students submission groups 
+awk -F " " -f error_stats.awk assignmentsToQuestionIds submission_review study_tasks knowledges task_knowledge students submission groups > "做错统计"
 
