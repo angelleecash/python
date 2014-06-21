@@ -63,8 +63,12 @@ function ord(str,    c)
 		answer[$1, $2] = $3;
 		if($3==0)
 		{
-			errorCount[$2]++;
-			errorStudent[$2, errorCount[$2]]=$1;
+			studentName = studentIdToName[$1];
+			if(index(studentName, "student") == 0)
+			{
+				errorCount[$2]++;
+				errorStudent[$2, errorCount[$2]]=$1;
+			}
 		}
 	}
 	else if(index(FILENAME, "submission") != 0) 
