@@ -14,5 +14,5 @@
 
 #cat assignments | sed "s/     / /g" | tr -d "[]" | sed -e "s/,/ /g" > assignmentsToQuestionIds
 
-awk -F " " -f error_stats.awk assignmentsToQuestionIds submission_review study_tasks knowledges task_knowledge students submission groups > "做错统计"
+awk -F " " -f error_stats.awk students assignmentsToQuestionIds submission_review study_tasks knowledges task_knowledge submission groups > "做错统计"
 
