@@ -65,7 +65,7 @@ function ord(str,    c)
 		{
 			studentName = studentIdToName[$1];
 			#print studentName " index student"  index(studentName, "student") 
-			if(index(studentName, "student") == 0)
+			if(index(studentName, "student") != 1)
 			{
 				errorCount[$2]++;
 				errorStudent[$2, errorCount[$2]]=$1;

@@ -9,7 +9,7 @@ rm assignments
 rm assignmentsToQuestionIds
 
 
-mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select subTasks from mission where id=11" | sed -e "s/\\\\n//g" > mission_data
+mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select subTasks from mission where id=12" | sed -e "s/\\\\n//g" > mission_data
 
 python parse_json.py mission_data > task_knowledge
 

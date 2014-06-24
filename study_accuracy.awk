@@ -3,6 +3,8 @@ BEGIN{
 	taskCount=0;
 	printf("\t");
 	_ord_init();
+	lastGroup = "";
+	groupCount = 1;
 }
 function _ord_init(    low, high, i, t)
 {
@@ -54,8 +56,15 @@ function ord(str,    c)
 	}
 	else if(index(FILENAME, "groups") != 0)
 	{
-		printf("%c 组\n", ord("A") + FNR -1);
-		for(i=1;i <= NF;i++)
+		if(lastGroup != $1)
+		{
+			lastGroup = $1;
+			groupCount = 1;
+		}
+		printf("%s组 第%d组\n", $1, groupCount);
+		groupCount ++;
+		#printf("%c 组\n", ord("A") + FNR -1);
+		for(i=2;i <= NF;i++)
 		{
 			studentName = $i;
 			studentId = studentNameToId[studentName];
@@ -66,12 +75,11 @@ function ord(str,    c)
 			}
 			printf("\n");
 		}
-		groupCount ++;	
 		printf("本组准确率\t");
 		for(i=0;i<taskCount;i++)
 		{
 			groupSum = 0;
-			for(j=1;j<=NF;j++)
+			for(j=2;j<=NF;j++)
 			{
 				studentId = studentNameToId[$j];
 				groupSum += accuracy[studentId, tasks[i]];	
