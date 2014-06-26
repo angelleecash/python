@@ -9,11 +9,13 @@ rm assignments
 rm assignmentsToQuestionIds
 
 
-mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select subTasks from mission where id=14" | sed -e "s/\\\\n//g" > mission_data
+mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select subTasks from mission where id=15" | sed -e "s/\\\\n//g" > mission_data
 
 python parse_json.py mission_data > task_knowledge
 
 mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select * from submission" > submission
+awk '{if($2=="265"){c++}else{print $0}}' submission > submission_fixed 
+mv submission_fixed submission
 
 mysql -uchenliang -pzxcvb -B --skip-column-names -e "use common;select * from knowledge" > knowledges 
 
