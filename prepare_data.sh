@@ -8,12 +8,11 @@ rm submission_review
 rm assignments
 rm assignmentsToQuestionIds
 
-
-mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select subTasks from mission where id=15" | sed -e "s/\\\\n//g" > mission_data
+mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select subTasks from mission where id=$1" | sed -e "s/\\\\n//g" > mission_data
 
 python parse_json.py mission_data > task_knowledge
 
-mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select * from submission" > submission
+mysql -uchenliang -pzxcvb -B --skip-column-names -e "use private_2;select * from submission where totalCount!=0" > submission
 awk '{if($2=="265"){c++}else{print $0}}' submission > submission_fixed 
 mv submission_fixed submission
 
