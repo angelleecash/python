@@ -8,9 +8,9 @@ apply plugin: 'java'
 //}
 //
 jar {
-//    from('libs'){
-//        include("poi-3.10-FINAL-20140208.jar")
-//    }
+    from('libs'){
+        include("poi-3.10-FINAL-20140208.jar")
+    }
     manifest {
         attributes 'Main-Class': 'Main'
         attributes 'Class-Path': 'poi-3.10-FINAL-20140208.jar'
