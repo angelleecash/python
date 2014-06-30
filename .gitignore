@@ -29,3 +29,5 @@ pip-log.txt
 *.swp
 ./JavaExcel/.Rhistory
 .Rhistory
+JavaExcel/.gradle
+.idea
