@@ -20,7 +20,7 @@ public class Main {
     Workbook workbook = new HSSFWorkbook();
 
     String[] TAB_NAMES = {"学习时间", "正确率统计", "不会做统计", "没做对统计"};
-    String[] DATA_FILES = {"./学习时间统计", "./准确率统", "./不会做统计", "./做错统计"};
+    String[] DATA_FILES = {"./学习时间统计", "./准确率统计", "./不会做统计", "./做错统计"};
 
     for (int i=0; i < TAB_NAMES.length; i++) {
       Sheet sheet = workbook.createSheet(TAB_NAMES[i]);
