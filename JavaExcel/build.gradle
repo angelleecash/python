@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+//sourceCompatibility = 1.5
+//version = '1.0'
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+jar {
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
+dependencies {
+    runtime files('libs/poi-3.10-FINAL-20140208.jar')
+    compile files('libs/poi-3.10-FINAL-20140208.jar');
+}
+
