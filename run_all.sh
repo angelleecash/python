@@ -3,6 +3,7 @@
 #sh run.sh 18
 #sh run.sh 19
 #sh run.sh 20 
-sh run.sh 21 
-sh run.sh 22 
+#sh run.sh 21 
+#ssh run.sh 22 
+sh run.sh 23 
 
