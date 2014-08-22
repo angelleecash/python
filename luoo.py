@@ -1,6 +1,9 @@
 # __author__ = 'chenliang'
 import urllib2
 
+print """Content-Type: text/html\n"""
+print "<html>"
+print "<body>"
 
 
 def parseLink(line):
@@ -37,6 +40,7 @@ for category in categories:
     guessPageCount = 20
 
     allItems = []
+    print "<table border=\"1\">"
 
     # url = "http://www.luoo.net/music/folk"
     for page in range(1,20):
@@ -79,16 +83,21 @@ for category in categories:
     if len(allItems) <= 0:
         continue
 
-    print "---->", category
+    # print "---->", category
 
     # allItems.sort(cmp=lambda x,y : cmp(x[7], y[7]))
     allItems.sort(cmp=comp, reverse=True)
 
+    print "<tr>"
     for i in range(0, min(len(allItems), 10)):
         link = allItems[i][0]
         like = allItems[i][7]
         title, href = parseLink(link)
-        print title, "(", str(like) ,")" #, "-->",href
+        print "<td><a href=\"", href, ">", title , "</a></td>"
+    print "</tr>"
+
+    print "</table>"
+        # print title, "(", str(like) ,")" #, "-->",href
     # for item in allItems:
     #     link = item[0]
     #     like = item[7]
@@ -96,7 +105,14 @@ for category in categories:
     #     title, href = parseLink(link)
     #     print title, "(", str(like) ,")" #, "-->",href
 
-    print "\n\n\n"
+    # print "\n\n\n"
+
+
+
+
+print "</body>"
+print "</html>"
+
 
 
 
