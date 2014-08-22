@@ -84,8 +84,11 @@ for category in categories:
     # allItems.sort(cmp=lambda x,y : cmp(x[7], y[7]))
     allItems.sort(cmp=comp, reverse=True)
 
-    for i in range(0, len(allItems)):
-        print allItems[i][0], "--->", allItems[i][7]
+    for i in range(0, min(len(allItems), 10)):
+        link = allItems[i][0]
+        like = allItems[i][7]
+        title, href = parseLink(link)
+        print title, "(", str(like) ,")" #, "-->",href
     # for item in allItems:
     #     link = item[0]
     #     like = item[7]

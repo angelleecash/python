@@ -9,7 +9,7 @@ rm *.xls
 #sh run.sh 24 
 #sh run.sh 25 
 #sh run.sh 26 
-for mission in `seq 11 26`
+for mission in `seq 27 28`
 do
     sh run.sh $mission
 done
