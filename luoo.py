@@ -93,7 +93,7 @@ for category in categories:
         link = allItems[i][0]
         like = allItems[i][7]
         title, href = parseLink(link)
-        print "<td><a href=\"", href, ">", title , "</a></td>"
+        print "<td><a href=\""+ href+ "\">"+ title + "</a></td>"
     print "</tr>"
 
     print "</table>"

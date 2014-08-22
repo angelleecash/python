@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="56553129-3222-448e-a54d-f6f3f1fd0865" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/luoo.py" afterPath="$PROJECT_DIR$/luoo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pythons.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,7 +75,7 @@
       <file leaf-file-name="luoo.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/luoo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="55" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.731114" vertical-offset="854" max-vertical-offset="1860">
+            <state line="95" column="52" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.5966709" vertical-offset="959" max-vertical-offset="1860">
               <folding />
             </state>
           </provider>
@@ -718,7 +717,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/luoo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="55" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.731114" vertical-offset="854" max-vertical-offset="1860">
+        <state line="95" column="52" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.5966709" vertical-offset="959" max-vertical-offset="1860">
           <folding />
         </state>
       </provider>
