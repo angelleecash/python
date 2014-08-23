@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # __author__ = 'chenliang'
 import urllib2
 
@@ -34,7 +35,7 @@ def comp(x, y):
     else:
         return 0
 
-categories = ["folk", "metal"]
+categories = ["inside", "folk", "metal", "britpop", "electronic", "ambient", "pop", "china", "psychedelic", "punk", "world", "hardcore", "jazz", "hip-hop", "classical", "ost"]
 
 for category in categories:
     guessPageCount = 20
@@ -84,17 +85,17 @@ for category in categories:
         continue
 
     # print "---->", category
-
+    print "<h1>" + category + "</h1>"
     # allItems.sort(cmp=lambda x,y : cmp(x[7], y[7]))
     allItems.sort(cmp=comp, reverse=True)
-
-    print "<tr>"
     for i in range(0, min(len(allItems), 10)):
         link = allItems[i][0]
         like = allItems[i][7]
         title, href = parseLink(link)
-        print "<td><a href=\""+ href+ "\">"+ title + "</a></td>"
-    print "</tr>"
+	
+    	print "<tr>"
+        print "<td><a href=\""+ href+ "\">"+ title + "(" + str(like) + ")" "</a></td>"
+    	print "</tr>"
 
     print "</table>"
         # print title, "(", str(like) ,")" #, "-->",href
