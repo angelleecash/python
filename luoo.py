@@ -36,6 +36,8 @@ categories = ["inside", "folk", "metal", "britpop", "electronic", "ambient", "po
 
 # for category in categories:
 #     queues[category] = Queue.Queue()
+results = {}
+
 
 def processCategory(category):
     guessPageCount = 20
@@ -83,7 +85,7 @@ def processCategory(category):
         title, href = parseLink(link)
         result.append([title, like, href])
 
-    # queues[category].put(result)
+    results[category].put(result)
 
 # for category in categories:
 #     t = threading.Thread(target=processCategory, args=(category,))
@@ -99,7 +101,7 @@ form = cgi.FieldStorage()
 category = form.getvalue('category')
 processCategory(category)
 
-results = {}
+
 
 # for category, queue in queues.iteritems():
 #     results[category] = queue.get()

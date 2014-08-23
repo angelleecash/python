@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="56553129-3222-448e-a54d-f6f3f1fd0865" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/luoo.py" afterPath="$PROJECT_DIR$/luoo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/luoo2.py" afterPath="$PROJECT_DIR$/luoo2.py" />
     </list>
     <ignored path="pythons.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="luoo.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="luoo.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/luoo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="36" selection-start="2375" selection-end="2375" vertical-scroll-proportion="0.0" vertical-offset="1146" max-vertical-offset="2055">
+            <state line="88" column="0" selection-start="2141" selection-end="2141" vertical-scroll-proportion="-0.76086956" vertical-offset="1635" max-vertical-offset="2085">
               <folding>
                 <element signature="e#43#57#0" expanded="true" />
               </folding>
@@ -75,10 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="luoo2.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="luoo2.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/luoo2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="50" selection-start="857" selection-end="857" vertical-scroll-proportion="0.3676815" vertical-offset="428" max-vertical-offset="855">
+            <state line="39" column="50" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="855">
               <folding>
                 <element signature="e#58#72#0" expanded="true" />
               </folding>
@@ -156,8 +155,8 @@
         <option value="$PROJECT_DIR$/analyze_logs.py" />
         <option value="$PROJECT_DIR$/os_walk.py" />
         <option value="$PROJECT_DIR$/coroutinue.py" />
-        <option value="$PROJECT_DIR$/luoo.py" />
         <option value="$PROJECT_DIR$/luoo2.py" />
+        <option value="$PROJECT_DIR$/luoo.py" />
       </list>
     </option>
   </component>
@@ -777,20 +776,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/luoo.py">
+    <entry file="file://$PROJECT_DIR$/luoo2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="36" selection-start="2375" selection-end="2375" vertical-scroll-proportion="0.0" vertical-offset="1146" max-vertical-offset="2055">
+        <state line="39" column="50" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="855">
           <folding>
-            <element signature="e#43#57#0" expanded="true" />
+            <element signature="e#58#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/luoo2.py">
+    <entry file="file://$PROJECT_DIR$/luoo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="50" selection-start="857" selection-end="857" vertical-scroll-proportion="0.3676815" vertical-offset="428" max-vertical-offset="855">
+        <state line="88" column="0" selection-start="2141" selection-end="2141" vertical-scroll-proportion="-0.76086956" vertical-offset="1635" max-vertical-offset="2085">
           <folding>
-            <element signature="e#58#72#0" expanded="true" />
+            <element signature="e#43#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
