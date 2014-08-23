@@ -85,7 +85,7 @@ def processCategory(category):
         title, href = parseLink(link)
         result.append([title, like, href])
 
-    results[category].put(result)
+    results[category] = result
 
 # for category in categories:
 #     t = threading.Thread(target=processCategory, args=(category,))
@@ -99,7 +99,7 @@ form = cgi.FieldStorage()
 
 # Get data from fields
 category = form.getvalue('category')
-processCategory(category)
+# processCategory(category)
 
 
 
@@ -116,11 +116,11 @@ for category, ranks in results.iteritems():
     print "<table>"
     allItems = ranks
 
-    print "<tr>"
     for i in allItems:
+        print "<tr>"
         title, like, href = i[:]
         print "<td><a href=\""+ href+ "\">"+ title + "(" + str(like) + ")</a></td>"
-    print "</tr>"
+        print "</tr>"
 
     print "</table>"
 
