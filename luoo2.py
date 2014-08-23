@@ -3,6 +3,9 @@
 __author__ = 'chenliang'
 import urllib2
 import re
+import cgi
+
+
 
 url = "http://www.luoo.net/music/"
 response = urllib2.urlopen(url)
@@ -29,6 +32,12 @@ for line in htmlContent:
 print """Content-Type: text/html\n"""
 print "<html>"
 print "<body>"
+
+form = cgi.FieldStorage()
+print "----------------------->"
+cgi.print_arguments()
+print "----------------------->"
+print form
 
 print "<table>"
 
