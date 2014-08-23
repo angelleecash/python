@@ -66,7 +66,7 @@
       <file leaf-file-name="luoo.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/luoo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="0" selection-start="2694" selection-end="2694" vertical-scroll-proportion="0.36231884" vertical-offset="1605" max-vertical-offset="2085">
+            <state line="40" column="0" selection-start="775" selection-end="775" vertical-scroll-proportion="-1.4492754" vertical-offset="1200" max-vertical-offset="2055">
               <folding>
                 <element signature="e#43#57#0" expanded="true" />
               </folding>
@@ -245,7 +245,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.luoo2">
+  <component name="RunManager" selected="Python.luoo">
     <configuration default="false" name="analyze_logs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -466,8 +466,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.luoo2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.luoo" />
+        <item index="0" class="java.lang.String" itemvalue="Python.luoo" />
+        <item index="1" class="java.lang.String" itemvalue="Python.luoo2" />
         <item index="2" class="java.lang.String" itemvalue="Python.coroutinue" />
         <item index="3" class="java.lang.String" itemvalue="Python.os_walk" />
         <item index="4" class="java.lang.String" itemvalue="Python.analyze_logs" />
@@ -787,7 +787,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/luoo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="2694" selection-end="2694" vertical-scroll-proportion="0.36231884" vertical-offset="1605" max-vertical-offset="2085">
+        <state line="40" column="0" selection-start="775" selection-end="775" vertical-scroll-proportion="-1.4492754" vertical-offset="1200" max-vertical-offset="2055">
           <folding>
             <element signature="e#43#57#0" expanded="true" />
           </folding>

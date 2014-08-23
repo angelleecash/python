@@ -99,9 +99,7 @@ form = cgi.FieldStorage()
 
 # Get data from fields
 category = form.getvalue('category')
-# processCategory(category)
-
-
+processCategory(category)
 
 # for category, queue in queues.iteritems():
 #     results[category] = queue.get()
