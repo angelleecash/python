@@ -1,8 +1,9 @@
 #!/usr/bin/python
 __author__ = 'chenliang'
 import urllib2
-import threading
-import Queue
+import os
+url = os.environ['HTTP_HOST']
+# import Queue
 
 def parseLink(line):
     l = line
@@ -32,10 +33,10 @@ def comp(x, y):
 
 categories = ["inside", "folk", "metal", "britpop", "electronic", "ambient", "pop", "china", "psychedelic", "punk", "world", "hardcore", "jazz", "hip-hop", "classical", "ost"]
 
-queues = {}
+# queues = {}
 
-for category in categories:
-    queues[category] = Queue.Queue()
+# for category in categories:
+#     queues[category] = Queue.Queue()
 
 def processCategory(category):
     guessPageCount = 20
@@ -83,22 +84,29 @@ def processCategory(category):
         title, href = parseLink(link)
         result.append([title, like, href])
 
-    queues[category].put(result)
+    # queues[category].put(result)
 
-for category in categories:
-    t = threading.Thread(target=processCategory, args=(category,))
-    t.start()
-    # t.join()
+# for category in categories:
+#     t = threading.Thread(target=processCategory, args=(category,))
+#     t.start()
+#     # t.join()
 
+# url = self.request.GET
+
+category = ""
+
+# processCategory(category)
 
 results = {}
 
-for category, queue in queues.iteritems():
-    results[category] = queue.get()
+# for category, queue in queues.iteritems():
+#     results[category] = queue.get()
 
 print """Content-Type: text/html\n"""
 print "<html>"
 print "<body>"
+
+print "<h1>------------>" + url + "</h1>"
 
 for category, ranks in results.iteritems():
     print "<h1>" + category + "</h1>"

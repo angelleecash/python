@@ -34,7 +34,8 @@ print "<table>"
 
 for result in results:
     print "<tr>"
-    print "<td><a href=\""+ result[0] + "\">"+ result[1] + "</a></td>"
+    href = "http://chenliang.info/luoo.py?k=" + result[0]
+    print "<td><a href=\""+ href + "\">"+ result[1] + "</a></td>"
     print "</tr>"
 
 print "</table>"
