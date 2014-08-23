@@ -3,9 +3,6 @@
 __author__ = 'chenliang'
 import urllib2
 import re
-import cgi
-
-
 
 url = "http://www.luoo.net/music/"
 response = urllib2.urlopen(url)
@@ -33,17 +30,14 @@ print """Content-Type: text/html\n"""
 print "<html>"
 print "<body>"
 
-form = cgi.FieldStorage()
-print "----------------------->"
-cgi.print_arguments()
-print "----------------------->"
-print form
-
 print "<table>"
 
 for result in results:
     print "<tr>"
-    href = "http://chenliang.info/luoo.py?k=" + result[0]
+    url = result[0]
+    lastIndex = url.rindex("/")
+    category = url[lastIndex+1:]
+    href = "http://chenliang.info/luoo.py?category=" + category
     print "<td><a href=\""+ href + "\">"+ result[1] + "</a></td>"
     print "</tr>"
 

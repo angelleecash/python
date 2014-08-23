@@ -2,8 +2,7 @@
 __author__ = 'chenliang'
 import urllib2
 import os
-url = os.environ['HTTP_HOST']
-# import Queue
+import cgi
 
 def parseLink(line):
     l = line
@@ -93,9 +92,12 @@ def processCategory(category):
 
 # url = self.request.GET
 
-category = ""
 
-# processCategory(category)
+form = cgi.FieldStorage()
+
+# Get data from fields
+category = form.getvalue('category')
+processCategory(category)
 
 results = {}
 
@@ -105,8 +107,6 @@ results = {}
 print """Content-Type: text/html\n"""
 print "<html>"
 print "<body>"
-
-print "<h1>------------>" + url + "</h1>"
 
 for category, ranks in results.iteritems():
     print "<h1>" + category + "</h1>"
