@@ -144,6 +144,9 @@ else:
 
 print """Content-Type: text/html\n"""
 print "<html>"
+print "<head>"
+print "<meta charset=\"UTF-8\">"
+print "</head>"
 print "<body>"
 
 for category, ranks in results.iteritems():
