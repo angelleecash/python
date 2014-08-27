@@ -3,6 +3,17 @@ __author__ = 'chenliang'
 import urllib2
 import os
 import cgi
+import os.path
+import time
+
+def getFilePath(category):
+    return "luoo_category" + str(category)
+
+form = cgi.FieldStorage()
+# Get data from fields
+category = form.getvalue('category')
+# categoryFilePath = getFilePath(category)
+
 
 def parseLink(line):
     l = line
@@ -78,14 +89,30 @@ def processCategory(category):
 
     allItems.sort(cmp=comp, reverse=True)
     result = []
-
     for i in range(0, min(len(allItems), 10)):
         link = allItems[i][0]
         like = allItems[i][7]
         title, href = parseLink(link)
         result.append([title, like, href])
-
     results[category] = result
+    saveCategoriesToFile(result)
+
+SEPARATOR = "*"
+
+def saveCategoriesToFile(result, category):
+    file = open(getFilePath(category), "w")
+    for item in result:
+        file.write(SEPARATOR.join(item))
+
+
+def loadCategoriesFromFile(category):
+    file = open(getFilePath(category), "r")
+    result = []
+    for line in file:
+        result.append(line.split(SEPARATOR))
+    results[category] = result
+
+
 
 # for category in categories:
 #     t = threading.Thread(target=processCategory, args=(category,))
@@ -95,11 +122,22 @@ def processCategory(category):
 # url = self.request.GET
 
 
-form = cgi.FieldStorage()
 
-# Get data from fields
-category = form.getvalue('category')
-processCategory(category)
+def isCategoryDataUpToDate(category):
+    categoryFilePath = getFilePath(category)
+    if not os.path.isfile(categoryFilePath):
+        return False
+
+    diff = int(time.time() - os.path.getctime(categoryFilePath))
+    if diff < 24*60*60:
+        return True
+    else :
+        return False
+
+if isCategoryDataUpToDate(category):
+    loadCategoriesFromFile(category)
+else:
+    processCategory(category)
 
 # for category, queue in queues.iteritems():
 #     results[category] = queue.get()
