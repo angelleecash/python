@@ -11,9 +11,10 @@ def getFilePath(category):
 
 form = cgi.FieldStorage()
 # Get data from fields
-# category = form.getvalue('category')
+category = form.getvalue('category')
+# category = "ost"
 # categoryFilePath = getFilePath(category)
-category = "indie"
+
 
 def parseLink(line):
     l = line
@@ -53,6 +54,7 @@ results = {}
 def processCategory(category):
     guessPageCount = 20
     allItems = []
+    itemMap = {}
 
     for page in range(1, guessPageCount):
         url = "http://www.luoo.net/tag/" + category + "?p=" + str(page)
@@ -79,8 +81,9 @@ def processCategory(category):
                     if matched:
                         matched = False
 
-                        if len(currentItem) > 0:
+                        if len(currentItem) > 0 and not currentItem[0] in itemMap:
                             allItems.append(currentItem)
+                            itemMap[currentItem[0]] = 1
                         currentItem = []
                 else:
                     if matched :
@@ -142,7 +145,7 @@ else:
 # for category, queue in queues.iteritems():
 #     results[category] = queue.get()
 
-print """Content-Type: text/html\n"""
+print """Content-Type: text/html;charset=UTF-8\n"""
 print "<html>"
 print "<body>"
 
