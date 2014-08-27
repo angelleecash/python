@@ -28,8 +28,11 @@ for line in htmlContent:
 
 print """Content-Type: text/html\n"""
 print "<html>"
+print "<head>"
+print "<meta charset=\"UTF-8\">"
+print "</head>"
 print "<body>"
-
+print "shit"
 print "<table>"
 
 for result in results:
