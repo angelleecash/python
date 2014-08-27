@@ -7,13 +7,13 @@ import os.path
 import time
 
 def getFilePath(category):
-    return "luoo_category" + str(category)
+    return "luoo_category_" + str(category)
 
 form = cgi.FieldStorage()
 # Get data from fields
-category = form.getvalue('category')
+# category = form.getvalue('category')
 # categoryFilePath = getFilePath(category)
-
+category = "indie"
 
 def parseLink(line):
     l = line
@@ -95,14 +95,14 @@ def processCategory(category):
         title, href = parseLink(link)
         result.append([title, like, href])
     results[category] = result
-    saveCategoriesToFile(result)
+    saveCategoriesToFile(result, category)
 
 SEPARATOR = "*"
 
 def saveCategoriesToFile(result, category):
     file = open(getFilePath(category), "w")
     for item in result:
-        file.write(SEPARATOR.join(item))
+        file.write(SEPARATOR.join(item) + "\n")
 
 
 def loadCategoriesFromFile(category):
