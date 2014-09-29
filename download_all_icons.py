@@ -25,9 +25,9 @@ def remove_empty_directory(path):
 
 def download(url, failCount=3):
     count = 0
-
     while(count < failCount):
         try:
+            time.sleep(5)
             response = urllib2.urlopen(url, timeout=timeOut)
             content = response.read()
             return True, content

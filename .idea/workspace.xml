@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="56553129-3222-448e-a54d-f6f3f1fd0865" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/download_all_icons.py" afterPath="$PROJECT_DIR$/download_all_icons.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pythons.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="download_all_icons.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/download_all_icons.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="17" selection-start="2425" selection-end="2425" vertical-scroll-proportion="0.5945946" vertical-offset="858" max-vertical-offset="1635">
+            <state line="29" column="24" selection-start="676" selection-end="676" vertical-scroll-proportion="0.25096524" vertical-offset="240" max-vertical-offset="1635">
               <folding>
                 <element signature="e#26#40#0" expanded="true" />
               </folding>
@@ -501,7 +500,9 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/596071422/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265" />
+        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/countdown.py">
@@ -536,7 +537,9 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/596071422/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265" />
+        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/countdown.py">
@@ -661,7 +664,9 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/596071422/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265" />
+        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mail_all.sh">
@@ -742,7 +747,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/download_all_icons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="17" selection-start="2425" selection-end="2425" vertical-scroll-proportion="0.5945946" vertical-offset="858" max-vertical-offset="1635">
+        <state line="29" column="24" selection-start="676" selection-end="676" vertical-scroll-proportion="0.25096524" vertical-offset="240" max-vertical-offset="1635">
           <folding>
             <element signature="e#26#40#0" expanded="true" />
           </folding>
