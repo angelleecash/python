@@ -102,4 +102,4 @@ while len(iconTypes) > 0:
     icon = iconTypes.pop()
     do_download(queue, icon)
     print "progress", len(iconTypes), "/", totalCount, "{:.2f}".format(len(iconTypes) * 1.0 / totalCount)
-    break
+    # break
