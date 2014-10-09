@@ -53,10 +53,12 @@ def download_icon_type(queue, type):
         os.mkdir(icon_output_dir)
 
     count = 0
+    failed_urls = set()
     for download_url in all_download_urls:
         ok, icon_content = download(downloadUrlPrefix + download_url, failCount=10000)
         if not ok:
-            print "++++++++++++++++++++", download_url
+            print "fail to download ", download_url, "for type ", type
+            failed_urls.add(download_url)
             continue
 
         icon_file_path = icon_output_dir + str(count) + ".png"
@@ -64,7 +66,12 @@ def download_icon_type(queue, type):
         icon_file.write(icon_content)
         icon_file.flush()
         count += 1
-
+    if count >= len(all_download_urls):
+        print type, "OK"
+    else :
+        print type, "INCOMPLETE"
+        for failed_url in failed_urls:
+            print "MISSING", failed_url
     remove_empty_directory(icon_output_dir)
     queue.put("")
 
@@ -79,14 +86,14 @@ else:
     htmlContent = str(html)
     open(bufferPath, "w").write(htmlContent)
 
-iconTypes = set();
+iconTypes = set()
 p = re.compile('<a href="/iconsets/([^"]*)">')
 results = p.findall(htmlContent)
 for r in results:
     iconTypes.add(r)
 
 queue = Queue.Queue()
-for i in range(32):
+for i in range(1):
     queue.put("")
 
 
@@ -95,6 +102,29 @@ def do_download(queue, type):
     t.daemon = True
     t.start()
 
+iconTypes = set()
+# iconTypes.add("ilb")
+# iconTypes.add("cat-power")
+
+iconTypes.add("adobe-flat-icons")
+iconTypes.add("christmas-special")
+iconTypes.add("cat-force")
+iconTypes.add("yama1-social-3")
+iconTypes.add("simple-files")
+iconTypes.add("creative-nerds-wooden-icons")
+iconTypes.add("imoticons")
+iconTypes.add("minimalist-social-media-icons-by-design-bolts")
+iconTypes.add("buttonz")
+iconTypes.add("dooffy_design_flags")
+iconTypes.add("monster-icons")
+iconTypes.add("chocolate_hearts")
+iconTypes.add("flag_set")
+iconTypes.add("hex-social-media")
+iconTypes.add("circle-payment-methods-4")
+iconTypes.add("social-set-2")
+iconTypes.add("195-flat-flag-psd-icons")
+iconTypes.add("hayal-social")
+iconTypes.add("european-country-flags")
 
 totalCount = len(iconTypes)
 while len(iconTypes) > 0:

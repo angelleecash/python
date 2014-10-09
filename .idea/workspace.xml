@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56553129-3222-448e-a54d-f6f3f1fd0865" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_icon_plist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rename_all_icons.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/download_all_icons.py" afterPath="$PROJECT_DIR$/download_all_icons.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pythons.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,39 +28,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="download_all_icons.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="build_native.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../connect/connect/proj.android/build_native.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="146" column="4" selection-start="5214" selection-end="5214" vertical-scroll-proportion="2.4332461" vertical-offset="286" max-vertical-offset="2445">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rm_empty_dir.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rm_empty_dir.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="download_all_icons.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/download_all_icons.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="11" selection-start="2854" selection-end="2854" vertical-scroll-proportion="2.007722" vertical-offset="0" max-vertical-offset="1650">
-              <folding>
-                <element signature="e#26#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="threading.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="760" column="0" selection-start="26941" selection-end="26941" vertical-scroll-proportion="0.0" vertical-offset="11274" max-vertical-offset="20025">
+            <state line="133" column="70" selection-start="3793" selection-end="3808" vertical-scroll-proportion="0.0" vertical-offset="1583" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urllib2.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py">
+      <file leaf-file-name="rename_all_icons.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rename_all_icons.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="30" selection-start="4181" selection-end="4181" vertical-scroll-proportion="0.0" vertical-offset="1830" max-vertical-offset="22140">
+            <state line="14" column="23" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socket.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py">
+      <file leaf-file-name="generate_icon_plist.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generate_icon_plist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="534" column="0" selection-start="19077" selection-end="19077" vertical-scroll-proportion="0.0" vertical-offset="8010" max-vertical-offset="8685">
+            <state line="9" column="38" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posix.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/596071422/posix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="644" column="4" selection-start="15178" selection-end="15178" vertical-scroll-proportion="0.0" vertical-offset="9528" max-vertical-offset="22065">
               <folding />
             </state>
           </provider>
@@ -101,6 +120,9 @@
         <option value="$PROJECT_DIR$/luoo.py" />
         <option value="$PROJECT_DIR$/rm_empty_dir.py" />
         <option value="$PROJECT_DIR$/download_all_icons.py" />
+        <option value="$PROJECT_DIR$/../connect/connect/proj.android/build_native.py" />
+        <option value="$PROJECT_DIR$/rename_all_icons.py" />
+        <option value="$PROJECT_DIR$/generate_icon_plist.py" />
       </list>
     </option>
   </component>
@@ -180,25 +202,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.download_all_icons">
-    <configuration default="false" name="coroutinue" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythons" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/coroutinue.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.generate_icon_plist">
     <configuration default="false" name="luoo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -216,24 +220,6 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="luoo2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythons" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/luoo2.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -270,6 +256,42 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythons" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rm_empty_dir.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="generate_icon_plist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythons" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_icon_plist.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="rename_all_icons" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythons" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rename_all_icons.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -397,19 +419,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.coroutinue" />
-      <item index="1" class="java.lang.String" itemvalue="Python.luoo" />
-      <item index="2" class="java.lang.String" itemvalue="Python.luoo2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.download_all_icons" />
-      <item index="4" class="java.lang.String" itemvalue="Python.rm_empty_dir" />
+      <item index="0" class="java.lang.String" itemvalue="Python.luoo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.download_all_icons" />
+      <item index="2" class="java.lang.String" itemvalue="Python.rm_empty_dir" />
+      <item index="3" class="java.lang.String" itemvalue="Python.generate_icon_plist" />
+      <item index="4" class="java.lang.String" itemvalue="Python.rename_all_icons" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.download_all_icons" />
-        <item index="1" class="java.lang.String" itemvalue="Python.rm_empty_dir" />
-        <item index="2" class="java.lang.String" itemvalue="Python.luoo" />
-        <item index="3" class="java.lang.String" itemvalue="Python.luoo2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.coroutinue" />
+        <item index="0" class="java.lang.String" itemvalue="Python.generate_icon_plist" />
+        <item index="1" class="java.lang.String" itemvalue="Python.rename_all_icons" />
+        <item index="2" class="java.lang.String" itemvalue="Python.download_all_icons" />
+        <item index="3" class="java.lang.String" itemvalue="Python.rm_empty_dir" />
+        <item index="4" class="java.lang.String" itemvalue="Python.luoo" />
       </list>
     </recent_temporary>
   </component>
@@ -439,11 +461,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22222222" sideWeight="0.50056624" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24305555" sideWeight="0.50056624" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45838508" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47826087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47204968" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -481,28 +503,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/re.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="8" selection-start="4053" selection-end="4053" vertical-scroll-proportion="0.0" vertical-offset="2183" max-vertical-offset="4245" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mail_all.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105" />
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="653" column="8" selection-start="22978" selection-end="22978" vertical-scroll-proportion="0.0" vertical-offset="9673" max-vertical-offset="20025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/596071422/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265">
-          <folding />
-        </state>
+        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/countdown.py">
@@ -537,9 +540,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/596071422/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265">
-          <folding />
-        </state>
+        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/countdown.py">
@@ -664,9 +665,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/596071422/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265">
-          <folding />
-        </state>
+        <state line="101" column="4" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="77265" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mail_all.sh">
@@ -709,48 +708,65 @@
         <state line="44" column="0" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2655" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/596071422/posix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="534" column="4" selection-start="12323" selection-end="12323" vertical-scroll-proportion="0.0" vertical-offset="7833" max-vertical-offset="22065" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rm_empty_dir.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="57" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
-      </provider>
-    </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/Queue.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="8" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="1452" max-vertical-offset="3750" />
       </provider>
     </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="534" column="0" selection-start="19077" selection-end="19077" vertical-scroll-proportion="0.0" vertical-offset="7796" max-vertical-offset="8640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="30" selection-start="4181" selection-end="4181" vertical-scroll-proportion="0.0" vertical-offset="1451" max-vertical-offset="21945">
-          <folding />
-        </state>
+        <state line="122" column="30" selection-start="4181" selection-end="4181" vertical-scroll-proportion="0.0" vertical-offset="1451" max-vertical-offset="21945" />
       </provider>
     </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="760" column="0" selection-start="26941" selection-end="26941" vertical-scroll-proportion="0.0" vertical-offset="11274" max-vertical-offset="20025">
+        <state line="760" column="0" selection-start="26941" selection-end="26941" vertical-scroll-proportion="0.32142857" vertical-offset="11274" max-vertical-offset="20025" />
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="534" column="0" selection-start="19077" selection-end="19077" vertical-scroll-proportion="0.0" vertical-offset="7796" max-vertical-offset="8640" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/596071422/posix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="644" column="4" selection-start="15178" selection-end="15178" vertical-scroll-proportion="0.0" vertical-offset="9528" max-vertical-offset="22065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rm_empty_dir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/download_all_icons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="11" selection-start="2854" selection-end="2854" vertical-scroll-proportion="2.007722" vertical-offset="0" max-vertical-offset="1650">
-          <folding>
-            <element signature="e#26#40#0" expanded="true" />
-          </folding>
+        <state line="133" column="70" selection-start="3793" selection-end="3808" vertical-scroll-proportion="0.0" vertical-offset="1583" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rename_all_icons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="23" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_icon_plist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../connect/connect/proj.android/build_native.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="4" selection-start="5214" selection-end="5214" vertical-scroll-proportion="2.4332461" vertical-offset="286" max-vertical-offset="2445">
+          <folding />
         </state>
       </provider>
     </entry>
