@@ -13,17 +13,14 @@ import sys
 # B0A1-F7FE
 
 unicode_to_reading = {}
-read_file = open("/Users/chenliang/read")
+read_file = open("./read")
 for line in read_file:
     segments = line.strip().split("\t")
     unicode_to_reading[segments[0]] = segments[2]
 
-# read_file = open("/Users/chenliang/git_projects/pythons/strokes")
 read_file = open("./strokes")
 unicode_to_radical_count = {}
 unicode_to_radical = {}
-# kkk = read_file.read().decode(encoding="utf8")
-# print kkk
 #
 # print sys.getdefaultencoding()
 for line in read_file:
@@ -46,22 +43,9 @@ for b1 in range(0xB0, 0xF8):
         bs.append(b1)
         bs.append(b2)
 
-        try:
-            vs = bs.decode("GBK")
-            key = "U+"+str(hex(ord(vs)))[2:].upper()
-            print key, vs, unicode_to_reading[key], unicode_to_radical_count[key], unicode_to_radical[key]
-        except:
-            print "fail to parse ", b1, " ", b2
-            pass
-print len(unicode_to_reading)
-# ba = bytearray()
-# ba.append(215)
-# ba.append(250)
-#
-# ba.decode("GBK")
+        vs = bs.decode("GBK")
+        key = "U+" + str(hex(ord(vs)))[2:].upper()
+        print key, vs, unicode_to_reading[key], unicode_to_radical_count[key], unicode_to_radical[key]
+        print "fail to parse ", b1, " ", b2
 
-# bs = bytearray();
-# bs.append(0x4E)
-# bs.append(0x24)
-#
-# print bs.decode("GB2312")
+print "total ", len(unicode_to_reading)
