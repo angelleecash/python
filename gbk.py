@@ -1,5 +1,7 @@
+
+# -*- coding: utf-8 -*-
+
 __author__ = 'chenliang'
-#encoding=utf8
 import unicodedata
 
 import sys
@@ -19,6 +21,7 @@ for line in read_file:
 # read_file = open("/Users/chenliang/git_projects/pythons/strokes")
 read_file = open("./strokes")
 unicode_to_radical_count = {}
+unicode_to_radical = {}
 # kkk = read_file.read().decode(encoding="utf8")
 # print kkk
 #
@@ -26,37 +29,10 @@ unicode_to_radical_count = {}
 for line in read_file:
     decoded = line.decode("utf-8")
     segments = decoded.split("\t")
-    # print segments[0], segments[1], type(segments[0]), type(segments[1]), segments[1]
 
-    # for v in segments:
-    #     print type(v), v, len(v)
-    # exit()
-    # , ord(segments[0])
-    # print line, len(segments)
-    # print line
-    # for i in range(0, len(segments)):
-    #     print i, segments[i]
-    #
-    # print "------------------------------------------------\n"
-    print segments[1], repr(segments[1]), ord(segments[1])
-    # key = "U+"+hex(ord(segments[1])).upper()[2:]
-    # unicode_to_radical_count[key] = segments[2]
-    # 1,2,4,5,6,7,8,9,11
-    # print segments[0],segments[1],segments[3],segments[4],segments[5],segments[6],segments[7],segments[8],segments[10]
-    # print type(segments[0]), segments[0], decoded, "---------", line
-    # ch = segments[0].decode("utf-8")
-    # try:
-    #     key = "U+"+hex(ord(ch)).upper()[2:]
-    #     print "key=", key
-    #     unicode_to_radical_count[key] = segments[1]
-    # except Exception as e:
-    #     print "fail for ", ch
-    #     pass
-    # "U+"+hex(ord(segments[0])).upper()[2:]
-
-    # print segments[0][0], type(segments[0][0]), len(segments[0][0])
-
-exit()
+    key = "U+"+hex(ord(segments[1])).upper()[2:]
+    unicode_to_radical_count[key] = segments[2]
+    unicode_to_radical[key] = segments[11].strip()
 
 for b1 in range(0xB0, 0xF8):
     for b2 in range(0xA1, 0xFF):
@@ -73,11 +49,11 @@ for b1 in range(0xB0, 0xF8):
         try:
             vs = bs.decode("GBK")
             key = "U+"+str(hex(ord(vs)))[2:].upper()
-            print key, vs, unicode_to_reading[key], unicode_to_radical_count[key]
+            print key, vs, unicode_to_reading[key], unicode_to_radical_count[key], unicode_to_radical[key]
         except:
             print "fail to parse ", b1, " ", b2
             pass
-
+print len(unicode_to_reading)
 # ba = bytearray()
 # ba.append(215)
 # ba.append(250)
